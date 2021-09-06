@@ -24,28 +24,28 @@ function DataTable() {
                         <td>Anakin</td>
                         <td>40</td>
                         <td>15</td>
-                        <td>15017.00</td>
+                        <td>17227.00</td>
                     </tr>
                     <tr>
                         <td>22/04/2021</td>
                         <td>Kal-El</td>
                         <td>36</td>
                         <td>30</td>
-                        <td>15017.00</td>
+                        <td>13017.00</td>
                     </tr>
                     <tr>
                         <td>22/04/2021</td>
                         <td>Logan</td>
                         <td>30</td>
                         <td>25</td>
-                        <td>15017.00</td>
+                        <td>20020.00</td>
                     </tr>
                     <tr>
                         <td>22/04/2021</td>
                         <td>Padmé</td>
                         <td>26</td>
                         <td>22</td>
-                        <td>15017.00</td>
+                        <td>16511.00</td>
                     </tr>
                 </tbody>
             </table>
