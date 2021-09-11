@@ -6,23 +6,22 @@ import com.devsuperior.dsvendas.entities.Sale;
 
 public class SaleDTO {
 
-	private Integer id;
+	private Long id;
 	private Integer visited;
 	private Integer deals;
 	private Double amount;
 	private LocalDate date;
 	
-	private SellerDTO seler;
+	private SellerDTO seller;
 	
 	
-	public SaleDTO(Integer id, Integer visited, Integer deals, Double amount, LocalDate date, SellerDTO seler) {
-		super();
+	public SaleDTO(Long id, Integer visited, Integer deals, Double amount, LocalDate date, SellerDTO seller) {
 		this.id = id;
 		this.visited = visited;
 		this.deals = deals;
 		this.amount = amount;
 		this.date = date;
-		this.seler = seler;
+		this.seller = seller;
 	}
 
 	public SaleDTO() {
@@ -34,14 +33,14 @@ public class SaleDTO {
 		deals = entity.getDeals();
 		amount = entity.getAmount();
 		date = entity.getDate();
-		seler = new SellerDTO(entity.getSeller());
+		seller = new SellerDTO(entity.getSeller());
 	}
 
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -78,11 +77,11 @@ public class SaleDTO {
 	}
 
 	public SellerDTO getSeler() {
-		return seler;
+		return seller;
 	}
 
-	public void setSeler(SellerDTO seler) {
-		this.seler = seler;
+	public void setSeler(SellerDTO seller) {
+		this.seller = seller;
 	}
 	
 	

@@ -18,7 +18,7 @@ public class Seller {
 	private String name;
 	
 	@OneToMany(mappedBy = "seller")
-	private List<Sale> seles = new ArrayList<>();
+	private List<Sale> sales = new ArrayList<>();
 	
 	public Seller() {
 	}
@@ -44,9 +44,8 @@ public class Seller {
 		this.name = name;
 	}
 
-	public List<Sale> getSeles() {
-		return seles;
+	public List<Sale> getSales() {
+		return sales;
 	}
-	
 	
 }

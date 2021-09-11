@@ -9,7 +9,7 @@ import com.devsuperior.dsvendas.DTO.SalesSucessDTO;
 import com.devsuperior.dsvendas.DTO.SalesSumDTO;
 import com.devsuperior.dsvendas.entities.Sale;
 
-public interface SaleRepository extends JpaRepository<Sale, Integer>{
+public interface SaleRepository extends JpaRepository<Sale, Long>{
 
 	@Query("SELECT new com.devsuperior.dsvendas.DTO.SalesSumDTO(obj.seller,SUM(obj.amount)) "
 			+ " FROM Sale AS obj GROUP BY obj.seller")
