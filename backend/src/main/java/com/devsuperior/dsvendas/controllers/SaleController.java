@@ -23,7 +23,7 @@ public class SaleController {
 	private SaleService service;
 	
 	
-	@GetMapping()
+	@GetMapping
 	public ResponseEntity<Page<SaleDTO>> findAll(Pageable page){
 		Page<SaleDTO> list = service.findAll(page);
 		return ResponseEntity.ok(list);
