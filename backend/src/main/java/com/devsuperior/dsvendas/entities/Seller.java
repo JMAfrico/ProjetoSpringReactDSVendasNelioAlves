@@ -8,8 +8,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
-@Entity(name="tb_sellers")
+@Entity
+@Table(name="tb_sellers")
 public class Seller {
 
 	@Id
@@ -24,6 +26,7 @@ public class Seller {
 	}
 
 	public Seller(Long id, String name) {
+		super();
 		this.id = id;
 		this.name = name;
 	}

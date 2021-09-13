@@ -25,7 +25,7 @@ const BarChart = () => {
         },
         series: [
             {
-                name: "% Sucesso",
+                name: "",
                 data: []                   
             }
         ]
@@ -50,7 +50,7 @@ const BarChart = () => {
                     ]
                 });
             });
-    }, [])
+    }, []);
 
     const options = {
         plotOptions: {

@@ -20,11 +20,11 @@ const DataTable = () => {
     });
 
     useEffect(() => {
-        axios.get(`${BASE_URL}/sales?page=${activePage}`)
+        axios.get(`${BASE_URL}/sales?page=${activePage}&size=20&sort=date,desc`)
             .then(response => {
                 setPage(response.data)
             })
-    }, [activePage])
+    }, [activePage]);
 
     const changePage = (index: number) =>{
         setActivePage(index);
@@ -45,8 +45,8 @@ const DataTable = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {page.content?.map((item) => (
-                        <tr className="text-secondary" key={item.id}>
+                    {page.content?.map(item => (
+                        <tr key={item.id}>
                             <td>{formatLocalDate(item.date,"dd/MM/yyyy")}</td>
                             <td>{item.seller}</td>
                             <td>{item.visited}</td>

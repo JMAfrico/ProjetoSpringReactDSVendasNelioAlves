@@ -1,3 +1,4 @@
+import { type } from "os";
 import { Seller } from "./seller";
 
 export type Sale = {

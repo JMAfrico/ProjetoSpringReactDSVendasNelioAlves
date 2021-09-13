@@ -17,7 +17,7 @@ public class SalesSucessDTO implements Serializable{
 	}
 
 	public SalesSucessDTO(Seller seller, Long visited, Long deals) {
-		sellerName = seller.getName();
+		this.sellerName = seller.getName();
 		this.visited = visited;
 		this.deals = deals;
 
