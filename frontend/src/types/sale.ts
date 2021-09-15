@@ -1,5 +1,4 @@
-import { type } from "os";
-import { Seller } from "./seller";
+import { Seler } from "./seler";
 
 export type Sale = {
     id: number;
@@ -7,10 +6,10 @@ export type Sale = {
     deals: number;
     amount: number;
     date: string;
-    seller: Seller;
+    seler: Seler;
 }
 
-export type Salepage = {
+export type SalesPage = {
     content?: Sale[];
     last: boolean;
     totalElements: number;
@@ -22,12 +21,12 @@ export type Salepage = {
     empty?: boolean;
 }
 
-export type SaleSum = {
+export type SalesSum = {
     sellerName: string;
     sum: number;
 }
 
-export type SaleSucess = {
+export type SalesSucess = {
     sellerName: string;
     visited: number;
     deals: number;

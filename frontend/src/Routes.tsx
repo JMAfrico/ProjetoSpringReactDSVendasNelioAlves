@@ -1,6 +1,8 @@
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Dashboard from 'pages/Dashboard';
 import Home from 'pages/Home';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
+
 
 const Routes = () => {
     return (

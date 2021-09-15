@@ -1,7 +1,7 @@
-import { Salepage } from "types/sale";
+import { SalesPage } from "types/sale";
 
 type Props = {
-    page: Salepage;
+    page: SalesPage;
     onPageChange : Function;
 }
 
