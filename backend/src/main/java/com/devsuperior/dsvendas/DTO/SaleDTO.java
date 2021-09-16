@@ -24,6 +24,7 @@ public class SaleDTO {
 		this.seller = seller;
 	}
 
+	
 	public SaleDTO() {
 	}
 
@@ -34,6 +35,14 @@ public class SaleDTO {
 		amount = entity.getAmount();
 		date = entity.getDate();
 		seller = new SellerDTO(entity.getSeller());
+	}
+
+	public SellerDTO getSeller() {
+		return seller;
+	}
+
+	public void setSeller(SellerDTO seller) {
+		this.seller = seller;
 	}
 
 	public Long getId() {
@@ -76,13 +85,6 @@ public class SaleDTO {
 		this.date = date;
 	}
 
-	public SellerDTO getSeler() {
-		return seller;
-	}
-
-	public void setSeler(SellerDTO seller) {
-		this.seller = seller;
-	}
 	
 	
 }
