@@ -36,6 +36,6 @@ Projeto feito com Spring no backend e React no frontend. Consiste em um relatór
 - Backend - Heroku<br>
 - Frontend - Netlify<br>
 
-### Diagrama de classe
+>### Diagrama de classe
 ![Web 1](https://github.com/JMAfrico/projeto-sds4/blob/master/frontend/src/assets/img/diagrama_classe.JPG)
 
