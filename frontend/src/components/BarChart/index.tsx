@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { BASE_URL } from 'utils/requests';
 import { round } from 'utils/format';
-import { SalesSucess } from 'types/sale';
+import { SalesSuccess } from 'types/sale';
 
 
 
@@ -36,7 +36,7 @@ const BarChart = () => {
     useEffect(() => {
         axios.get(`${BASE_URL}/sales/sucess-by-seller`)
             .then(response => {
-                const datas = response.data as SalesSucess[];
+                const datas = response.data as SalesSuccess[];
                 const myLabels = datas.map(x => x.sellerName);
                 const mySeries = datas.map(x => round(100.0 * x.deals/x.visited,1));
 

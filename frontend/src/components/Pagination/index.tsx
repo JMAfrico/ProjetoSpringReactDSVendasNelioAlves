@@ -25,4 +25,4 @@ const Pagination = ( { page, onPageChange } : Props) => {
         </div>
     )
 }
-export default Pagination;
+export default Pagination
