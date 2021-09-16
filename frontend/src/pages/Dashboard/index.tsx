@@ -20,7 +20,6 @@ const Dashboard = () => {
                         <h5 className="text-center text-secondary">Todas vendas</h5>
                         <DonutChart />
                     </div>
-
                 </div>
 
                 <div className="py-3">

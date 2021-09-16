@@ -21,7 +21,7 @@ export type SalesPage = {
     empty?: boolean;
 }
 
-export type SalesSumDTO = {
+export type SaleSum = {
     sellerName: string;
     sum: number;
 }

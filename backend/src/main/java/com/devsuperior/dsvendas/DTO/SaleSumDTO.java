@@ -4,17 +4,17 @@ import java.io.Serializable;
 
 import com.devsuperior.dsvendas.entities.Seller;
 
-public class SalesSumDTO implements Serializable{
+public class SaleSumDTO implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	
 	private String sellerName;
 	private Double sum;
 	
-	public SalesSumDTO() {
+	public SaleSumDTO() {
 	}
 
-	public SalesSumDTO(Seller sellerName, Double sum) {
+	public SaleSumDTO(Seller sellerName, Double sum) {
 		this.sellerName = sellerName.getName();
 		this.sum = sum;
 	}

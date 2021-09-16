@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.devsuperior.dsvendas.DTO.SaleDTO;
 import com.devsuperior.dsvendas.DTO.SalesSucessDTO;
-import com.devsuperior.dsvendas.DTO.SalesSumDTO;
+import com.devsuperior.dsvendas.DTO.SaleSumDTO;
 import com.devsuperior.dsvendas.entities.Sale;
 import com.devsuperior.dsvendas.repositories.SaleRepository;
 import com.devsuperior.dsvendas.repositories.SellerRepository;
@@ -20,7 +20,7 @@ public class SaleService {
 	
 	
 	@Autowired
-	private SaleRepository repository;
+	private SaleRepository Salerepository;
 	
 	@Autowired
 	private SellerRepository sellerrepository;
@@ -28,17 +28,17 @@ public class SaleService {
 	@Transactional(readOnly = true)
 	public Page<SaleDTO> findAll(Pageable page){
 		sellerrepository.findAll();
-		Page<Sale> result = repository.findAll(page);
+		Page<Sale> result = Salerepository.findAll(page);
 		return result.map(x -> new SaleDTO(x));
 	}
 	
 	@Transactional(readOnly = true)
-	public List<SalesSumDTO> amountGroupedBySeller(){
-		return repository.amountGroupedBySeller();
+	public List<SaleSumDTO> amountGroupedBySeller(){
+		return Salerepository.amountGroupedBySeller();
 	}
 	
 	@Transactional(readOnly = true)
 	public List<SalesSucessDTO> successGroupedBySeller(){
-		return repository.successGroupedBySeller();
+		return Salerepository.successGroupedBySeller();
 	}
 }
