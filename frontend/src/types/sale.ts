@@ -6,7 +6,7 @@ export type Sale = {
     deals: number;
     amount: number;
     date: string;
-    seler: Seler;
+    seller: Seler;
 }
 
 export type SalesPage = {
@@ -22,7 +22,7 @@ export type SalesPage = {
 }
 
 export type SaleSum = {
-    seller: string;
+    sellerName: string;
     sum: number;
 }
 
